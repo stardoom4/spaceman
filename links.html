@@ -6,15 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Links</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+html {
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
+}
+
+
+</style>
 </head>
 
 <body>
  <div id="card">
   <a href="index.html">Home</a>
   </div><br>
-  <div id="card1">
+  <div id="box">
    <button><a href="https://opensea.io/stardoom4">My NFT's on OPENSEA</a></button>
   </div>
+  <style>
+  #box {
+  background-color: yellow;
+  width: 330px;
+  border: 5px solid yellow;
+  padding: 5px;
+}
+</style>
 </body>
 
 </html>
